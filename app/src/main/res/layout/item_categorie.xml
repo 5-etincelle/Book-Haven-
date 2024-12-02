@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="8dp"
+    >
+   <RelativeLayout
+       android:layout_margin="15dp"
+       android:layout_width="match_parent"
+       android:layout_height= "wrap_content">
+
+       <ImageView
+           android:id="@+id/imageBook"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:src="@drawable/book3" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/NameBook"
+           android:text="nameBook"
+           android:fontFamily="@font/inter"
+           android:layout_below="@+id/imageBook"
+           android:textSize="20dp"
+           android:padding="10dp"
+           android:gravity="center"
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/auteur"
+           android:text="nameBook"
+            android:gravity="center"
+           android:layout_below="@+id/NameBook"
+           android:textSize="20dp"
+           android:padding="10dp"
+           />
+   </RelativeLayout>
+</androidx.cardview.widget.CardView>
