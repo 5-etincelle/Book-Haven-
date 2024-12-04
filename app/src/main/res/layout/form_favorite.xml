@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <androidx.cardview.widget.CardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/cardView"
-        android:layout_width="match_parent"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+    android:layout_margin="8dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        >
+        android:layout_height="120dp">
 
         <ImageView
             android:id="@+id/imageBook"
@@ -68,7 +66,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageBook"
             app:layout_constraintTop_toBottomOf="@+id/auteur"
-            tools:textSize="24dp" />
+            tools:textSize="24sp" />
 
         <ImageView
             android:id="@+id/iconEvaluation"
@@ -91,10 +89,10 @@
             android:layout_marginTop="60dp"
             android:layout_marginEnd="20dp"
             android:text="5/5"
-            android:textSize="15dp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/iconEvaluation"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

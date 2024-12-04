@@ -19,16 +19,16 @@
             android:name=".activities.quotes"
             android:exported="false" />
         <activity
-            android:name=".activities.test"
+            android:name=".login_register.login_kotlin"
             android:exported="false" />
         <activity
             android:name=".activities.favorite"
             android:exported="false" />
         <activity
-            android:name=".activities.Splash_Activities"
+            android:name=".activities.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.Splash_Activities"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
