@@ -37,13 +37,6 @@ class Favorite_Adapter(val listBook:List<Book>): RecyclerView.Adapter<Favorite_A
         holder.evaluation.text=Book.evaluation
         holder.image.setImageResource(Book.image)
 
-
-        holder.itemView.setOnLongClickListener { view ->
-            registerForContextMenu()
-            view.showContextMenu()
-            true
-        }
-
     }
 
     private fun registerForContextMenu() {
