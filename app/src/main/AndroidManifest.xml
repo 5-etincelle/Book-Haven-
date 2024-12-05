@@ -28,6 +28,10 @@
             android:name=".activities.MainActivity"
             android:exported="false" />
         <activity
+            android:name=".login_register.signUp"
+            android:exported="false" />
+
+        <activity
             android:name=".activities.Splash_Activities"
             android:exported="true">
             <intent-filter>
@@ -37,5 +41,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

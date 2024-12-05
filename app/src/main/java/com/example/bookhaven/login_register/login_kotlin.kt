@@ -12,6 +12,7 @@ import com.example.bookhaven.R
 import com.example.bookhaven.activities.MainActivity
 import com.example.bookhaven.dao
 import com.example.bookhaven.data.Personne
+import kotlin.math.sign
 
 class login_kotlin : AppCompatActivity() {
     val o1 = dao(mutableListOf(Personne(1,"ayoub","ayoub"), Personne(2,"admin","admin")))
@@ -30,7 +31,7 @@ class login_kotlin : AppCompatActivity() {
             else Toast.makeText(this, "Empty input", Toast.LENGTH_LONG).show()
         }
         signup.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, signUp::class.java)
             startActivity(intent)
         }
 
