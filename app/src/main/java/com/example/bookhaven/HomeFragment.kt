@@ -58,6 +58,10 @@ class HomeFragment : Fragment() {
         gridView=view.findViewById(R.id.gridviewHome)
         listview=view.findViewById(R.id.listview)
         searchIcon=view.findViewById(R.id.searchIcon)
+        searchIcon.setOnClickListener {
+            val intent=Intent(context,Search::class.java)
+            startActivity(intent)
+        }
 
         recyclerView=view.findViewById(R.id.recyclerView)
         itemCategorieAdapter= ItemCategorieAdapter(context,listCategorieBook)
