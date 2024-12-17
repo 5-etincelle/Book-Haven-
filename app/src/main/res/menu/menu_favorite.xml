@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="afficher"
+        android:id="@+id/afficher"
+        />
+    <item
+        android:title="supprimer"
+        android:id="@+id/supprimer"
+        />
+</menu>

@@ -7,6 +7,8 @@
         android:id="@+id/bottom_Home"
         android:icon="@drawable/home"
         app:showAsAction="always"
+
+
         android:gravity="center" />
     <item
         android:title=""
@@ -14,12 +16,21 @@
         app:showAsAction="always"
         android:gravity="center"
         android:icon="@drawable/favorite"
-        app:itemIconSize="24dp"
+
+        />
+    <item
+        android:title=""
+        android:id="@+id/bottom_quotes"
+        app:showAsAction="always"
+        android:icon="@drawable/quotes_icon"
         />
     <item
         android:title=""
         android:id="@+id/bottom_setting"
         app:showAsAction="always"
         android:icon="@drawable/settings"
-        android:gravity="center" />
+         />
+
+
+
 </menu>

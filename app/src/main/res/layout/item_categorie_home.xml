@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="15dp"
+    android:backgroundTint="#D9D9D9"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:id="@+id/ds"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:gravity="center"
+
+
+      >
+        <ImageView
+            android:id="@+id/imageCategorie"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:src="@drawable/thrailler"
+            />
+        <TextView
+            android:id="@+id/nameCategorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="thrailler"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

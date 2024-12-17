@@ -1,3 +1,5 @@
 package com.example.bookhaven.data
 
-data class Book(val image:Int ,val name:String,val auteur:String,val anne:Int,val evaluation:String,val quotes:String)
+import androidx.core.os.ParcelCompat
+
+data class Book(val image:Int ,val name:String,val author:String,val year:String,val evaluation:String,val quotes:String,val description:String,val genre:String,val pages:String)

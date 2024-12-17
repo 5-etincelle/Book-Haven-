@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+ >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".book">
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="91dp"
+        android:background="#86FD6F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/bookimage"
+        android:layout_width="200dp"
+        android:background="@drawable/custom_edi_text"
+        android:layout_height="300dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="396dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/the_sevn_habits" />
+        <TextView
+            android:id="@+id/namebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:text="the sevan habits"
+            android:textSize="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameauthorbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="scroll width"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namebook" />
+
+    <ImageView
+        android:id="@+id/imageev"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.385"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameauthorbook"
+        app:srcCompat="@drawable/evaluation_icon" />
+
+    <TextView
+        android:id="@+id/evaluationBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="153dp"
+        android:text="4.5/5"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameauthorbook" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="720dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#D9D9D9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="Pages"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/pagesBook"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:textColor="#828282"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="720dp"
+        android:layout_marginEnd="90dp"
+        android:backgroundTint="#D9D9D9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="696dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:text="Genre"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/genreBook"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:textColor="#828282"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+
+        android:id="@+id/cardView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="720dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#D9D9D9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="696dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:text="Year"
+                android:textSize="24dp" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/yearBook"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:textColor="#828282"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="835dp"
+        android:fontFamily="@font/inter"
+        android:text="Description "
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="880dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="24dp"
+        android:textColor="#828282"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#86FD6F"
+        android:text="Ride Book"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionBook" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

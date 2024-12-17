@@ -21,7 +21,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.123" />
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/barRecherche"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginStart="15dp"
@@ -51,17 +51,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
         tools:textStyle="bold" />
 
     <GridView
         android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="332dp"
         android:horizontalSpacing="15dp"
-        android:numColumns="auto_fit"
-        android:padding="10dp"
+        android:numColumns="3"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
         android:verticalSpacing="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

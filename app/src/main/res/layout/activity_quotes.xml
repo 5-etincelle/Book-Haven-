@@ -7,6 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.quotes">
+
+
     <TextView
         android:id="@+id/titel_Activity"
         android:layout_width="wrap_content"
@@ -16,9 +18,11 @@
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.216" />
+
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
@@ -36,31 +40,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titel_Activity" />
 
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="294dp"
         android:fontFamily="@font/inter"
         android:text="Quotes"
         android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="@id/editText"
+        app:layout_constraintVertical_bias="0.021"
         tools:textStyle="bold" />
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/recyclerView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="400dp"-->
+    <!--        android:layout_marginTop="332dp"-->
+    <!--        android:paddingStart="15dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="00dp"
-        android:layout_marginTop="304dp"
-        android:paddingStart="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="396dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
