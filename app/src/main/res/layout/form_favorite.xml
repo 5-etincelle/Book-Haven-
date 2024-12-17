@@ -5,13 +5,10 @@
     android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-<<<<<<< HEAD
     app:cardCornerRadius="10dp"
     app:cardElevation="8dp"
-        android:layout_margin="8dp">
-=======
     android:layout_margin="8dp">
->>>>>>> b5fc1f4b671f28a9daa56e6bb66e85f8e4468420
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

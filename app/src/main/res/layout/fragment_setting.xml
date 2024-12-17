@@ -1,16 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SettingFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="36dp"
-        android:gravity="center"
-        android:text="frament setting" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/titel_Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="Book Haven "
+            android:textSize="40dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"/>
+        <TextView
+            android:id="@+id/Setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="Setting"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"/>
+        <TextView
+            android:id="@+id/set1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Settings"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:background="@color/gris"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/set1Hidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, I am now visible!"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/set2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/gris"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:text="Profile Settings" />
+
+        <TextView
+            android:id="@+id/set2Hidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, I am now visible!"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/set3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Settings"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:background="@color/gris"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/set3Hidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, I am now visible!"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:id="@+id/set4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Settings"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:background="@color/gris"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/set4Hidden"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, I am now visible!"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
