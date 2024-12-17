@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- Setting Items -->
+        <TextView
+            android:id="@+id/tvProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Settings"
+            android:drawableStart="@drawable/book1"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackground"/>
+        <TextView
+            android:id="@+id/tvNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:drawableStart="@drawable/book1"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/tvSecurity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:drawableStart="@drawable/book1"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Language"
+            android:drawableStart="@drawable/book1"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/tvHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help and Support"
+            android:drawableStart="@drawable/book1"
+            android:drawablePadding="12dp"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackground"/>
+    </LinearLayout>
+</ScrollView>

@@ -15,7 +15,7 @@ import com.example.bookhaven.data.Personne
 import kotlin.math.sign
 
 class login_kotlin : AppCompatActivity() {
-    val o1 = dao(mutableListOf(Personne(1,"ayoub","ayoub"), Personne(2,"admin","admin")))
+    val o1 = dao(users)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login_page_layout)
