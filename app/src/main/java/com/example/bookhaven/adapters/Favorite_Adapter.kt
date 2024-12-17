@@ -33,7 +33,7 @@ class Favorite_Adapter(val context: Context?, val listBook:List<Book>): Recycler
         val NameBook: TextView = itemView.findViewById(R.id.NameBook)
         val NameAuteur: TextView = itemView.findViewById(R.id.auteur)
         val Annee:TextView=itemView.findViewById(R.id.annee)
-        val optionsMenu: ImageView = itemView.findViewById(R.id.iconPopupMenu)
+        val optionsMenu: ImageView = itemView.findViewById(R.id.iconMenu)
         init {
        itemView.setOnClickListener {
            listner.onItemClick(adapterPosition)

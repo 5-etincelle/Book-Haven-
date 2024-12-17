@@ -13,6 +13,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.GridView
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -36,6 +37,7 @@ class HomeFragment : Fragment() {
     lateinit var listview:RecyclerView
     lateinit var  ListViewAdapter:ListBookHomeAdapter
     lateinit var bookMoreRide:List<Book>
+    lateinit var searchIcon:ImageView
 
     @SuppressLint("MissingInflatedId")
 
@@ -53,8 +55,10 @@ class HomeFragment : Fragment() {
             CategorieBook("quetes",R.drawable.quetes)
         )
 
-         gridView=view.findViewById(R.id.gridviewHome)
+        gridView=view.findViewById(R.id.gridviewHome)
         listview=view.findViewById(R.id.listview)
+        searchIcon=view.findViewById(R.id.searchIcon)
+
         recyclerView=view.findViewById(R.id.recyclerView)
         itemCategorieAdapter= ItemCategorieAdapter(context,listCategorieBook)
         gridView.adapter=itemCategorieAdapter
